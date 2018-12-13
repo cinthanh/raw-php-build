@@ -10,6 +10,11 @@ class User
 {
     public function __construct()
     {
-        echo 'model user';
+       // echo 'model user';
+    }
+
+    public function getAll()
+    {
+        return ' xx model xx';
     }
 }

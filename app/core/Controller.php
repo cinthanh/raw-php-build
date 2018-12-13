@@ -10,4 +10,11 @@ class Controller
         return new $model;
     }
 
+    public function view($view, $data = '')
+    {
+        if (is_array($data)) {
+             extract($data);
+        }
+        require_once '../app/views/' .$view . '.php';
+    }
 }
