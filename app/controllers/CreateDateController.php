@@ -15,6 +15,7 @@ class CreateDateController extends Controller
 
     public function playGameHey($a)
     {
-        echo $a, $_GET['dev'];
+        echo $a, $_GET['dev'], '<br>';
+        $user = $this->model('User');
     }
 }
